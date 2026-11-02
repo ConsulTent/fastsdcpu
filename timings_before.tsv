@@ -1,0 +1,11 @@
+pass	case	status	wall_s	latency_s	loader_or_error
+before	1_ov_sd_turbo	PASS	114.4	26.66	***** Init Text to image (OpenVINO) - rupeshs/sd-turbo-openvino *****
+before	2_ov_flux1_schnell	FAIL	131.0	-	***** Init Text to image (OpenVINO) - OpenVINO/FLUX.1-schnell-int4-ov *****
+before	3_ov_sana_sprint	PASS	148.6	60.26	***** Init Text to image (OpenVINO) - rupeshs/sana-sprint-0.6b-openvino-int4 *****
+before	4_ov_flux2_klein	PASS	174.7	87.07	***** Init Text to image (OpenVINO) - rupeshs/flux2-klein-4b-int4-ov *****
+before	5_lcm_stale_klein	FAIL	86.3	-	Error in generating images: Negative prompt is not supported for Flux Klein model in OpenVINO mode.
+before	6_lcmlora_stale	PASS	101.7	15.56	***** Init LCM-LoRA pipeline - Lykon/dreamshaper-8 *****
+before	7_ov_klein_taesd	PASS	84.3	-	Error in generating images: Tiny AutoEncoder is not supported for Flux Klein model in OpenVINO mode.
+before	8_ov_flux3_klein	PASS	169.8	82.25	***** Init Text to image (OpenVINO) - rupeshs/flux3-image-klein-int4-ov *****
+before	9_ov_iris_1024	PASS	242.0	152.13	***** Init Text to image (OpenVINO) - rupeshs/iris-3b-int8-ov *****
+DONE

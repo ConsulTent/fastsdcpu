@@ -1,0 +1,5 @@
+PASS klein_openvino_rejects_taesd
+PASS stale_ov_id_ignored_outside_openvino
+PASS square_still_hetero_in_openvino
+PASS flux1_uses_ov_diffusion_loader
+exit 0  wall 72.4s

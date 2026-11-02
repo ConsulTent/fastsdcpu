@@ -1,0 +1,58 @@
+Multiple distributions found for package optimum. Picked distribution: optimum
+WARNING:root:ControlNet settings not found, ControlNet will be disabled
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]FastSD CPU -  v1.0.0 beta 620
+Running on Linux platform
+OS: Linux-6.12.107+deb13-amd64-x86_64-with-glibc2.41
+Processor: 
+Using device : cpu
+Output path : /app/results
+Found 6 LCM models in config/lcm-models.txt
+Found 7 stable diffusion models in config/stable-diffusion-models.txt
+Found 4 LCM-LoRA models in config/lcm-lora-models.txt
+Found 14 OpenVINO LCM models in config/openvino-lcm-models.txt
+Torch datatype : torch.float32
+{'clip_skip': 1,
+ 'controlnet': None,
+ 'diffusion_task': 'text_to_image',
+ 'dirs': {'controlnet': '/app/controlnet_models', 'lora': '/app/lora_models'},
+ 'gguf_model': {'clip_path': None,
+                'diffusion_path': None,
+                'gguf_models': '/app/models/gguf',
+                't5xxl_path': None,
+                'vae_path': None},
+ 'guidance_scale': 1.0,
+ 'image_height': 512,
+ 'image_width': 512,
+ 'inference_steps': 4,
+ 'init_image': None,
+ 'lcm_lora': {'base_model_id': 'Lykon/dreamshaper-8',
+              'lcm_lora_id': 'latent-consistency/lcm-lora-sdv1-5'},
+ 'lcm_model_id': 'stabilityai/sd-turbo',
+ 'lora': {'enabled': False,
+          'fuse': False,
+          'models_dir': '/app/lora_models',
+          'path': None,
+          'weight': 0.5},
+ 'negative_prompt': '',
+ 'number_of_images': 1,
+ 'openvino_lcm_model_id': 'rupeshs/flux3-image-klein-int4-ov',
+ 'prompt': 'a cat',
+ 'rebuild_controlnet_pipeline': False,
+ 'rebuild_pipeline': False,
+ 'seed': -1,
+ 'strength': 0.3,
+ 'token_merging': 0.0,
+ 'use_gguf_model': False,
+ 'use_lcm_lora': False,
+ 'use_offline_model': False,
+ 'use_openvino': True,
+ 'use_safety_checker': False,
+ 'use_seed': False,
+ 'use_tiny_auto_encoder': False}
+***** Init Text to image (OpenVINO) - rupeshs/flux3-image-klein-int4-ov *****
+Loading OpenVINO Flux3 image Klein pipeline
+Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 533.97it/s]
+Pipeline : <backend.openvino.ov_flux3_image_klein_pipeline.OVFlux3KleinPipeline object at 0x7f8318b57750>
+Using OpenVINO generating image...
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:17<00:53, 17.69s/it] 50%|█████     | 2/4 [00:27<00:25, 12.99s/it] 75%|███████▌  | 3/4 [00:37<00:11, 11.48s/it]100%|██████████| 4/4 [00:46<00:00, 10.78s/it]100%|██████████| 4/4 [00:46<00:00, 11.70s/it]
+Latency : 82.10 seconds

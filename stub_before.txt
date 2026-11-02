@@ -1,0 +1,5 @@
+PASS klein_openvino_rejects_taesd
+FAIL stale_ov_id_ignored_outside_openvino ValueError Negative prompt is not supported for Flux Klein model in OpenVINO mode.
+PASS square_still_hetero_in_openvino
+FAIL flux1_uses_ov_diffusion_loader AssertionError ov_sd
+exit 2  wall 72.3s
